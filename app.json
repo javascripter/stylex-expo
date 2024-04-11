@@ -4,10 +4,8 @@
     "web": {
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ],
-    "name": "rsd-expo",
-    "slug": "rsd-expo"
+    "plugins": ["expo-router"],
+    "name": "stylex-expo",
+    "slug": "stylex-expo"
   }
 }
