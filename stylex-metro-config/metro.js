@@ -63,7 +63,6 @@ function withStyleX(metroConfig, options = {}) {
   const projectRoot = options.projectRoot ?? process.cwd()
 
   const styleXOptions = {
-    ...options.styleXOptions,
     dev: isDev,
     importSources: [
       "@stylexjs/stylex",
@@ -75,6 +74,7 @@ function withStyleX(metroConfig, options = {}) {
       rootDir: projectRoot,
       type: "commonJS",
     },
+    ...options.styleXOptions,
   }
 
   const defaultStyleXBundleFilePath = path.resolve(
